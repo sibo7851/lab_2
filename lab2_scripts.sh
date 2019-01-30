@@ -13,7 +13,9 @@ grep $in1 $in2 > command_results.txt
 grep -P -c "^\d{3}-\d{3}-\d{4}" regex_practice.txt
 grep -c "@" regex_practice.txt
 grep -P "^303-\d{3}-\d{4}" regex_practice.txt > phone_results.txt
-grep -P "^((?!@geocities.com).)*$" regex_practice.txt > email_results.txt
+grep -P "^((?!@geocities.com).)*$" regex_practice.txt > email_results1.txt
+grep -P "@" email_results1.txt > email_results.txt
+rm email_results1.txt
 #^((?!hede).)*$
 #grep "@geocities.com" regex_practice.txt
 
